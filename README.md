@@ -10,7 +10,7 @@ Just send an email to us to get access to the repository edition, even though yo
 We are currently using the one where we need a url. Currently we have automatically programmed it to execute every hour.
 
 ### Standard mkdocs method
-It is enough to clone the repository and build the page locally with 'mkdocs': the 'gh-deploy' command will automatically do the job. It only needs a token (password) to edit the online repository. The username can be anything.
+It is enough to clone the repository and build the page locally with 'mkdocs': the 'gh-deploy' command will automatically do the job. It only needs a token (password) to edit the online repository. The username can be anything. This deploys the page into a github url, but has some limitations.
 
 You will need mkdocs, mkdocs-material (pip install them) and git. Then just execute this in the terminal:
     
@@ -20,7 +20,7 @@ You will need mkdocs, mkdocs-material (pip install them) and git. Then just exec
     cd ..
     rm -rf miniTRASGO
 
-### If you already have a site (with its url)
+### If you already have a url (preferred method)
 Configure the ssh config file to add the following directions:
 
     Host nuclab2
@@ -39,4 +39,4 @@ The computer `nuc1` is the one from which the page has to be deployed, but we ca
 
 Once in the `nuc1`, execute the following command:
 
-    /home/www/html/update-minitrasgo.sh
+    sudo /home/www/html/update-minitrasgo.sh
