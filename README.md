@@ -1,4 +1,4 @@
-# miniTRASGO Documentation
+# miniTRASGO Documentation ()
 
 **This documentation is designed to be edited easily by anyone. No coding skills or prior technical knowledge are required!**
 
