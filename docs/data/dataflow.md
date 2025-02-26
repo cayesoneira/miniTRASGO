@@ -1,4 +1,4 @@
-# Dataflow (legacy)
+# Dataflow (legacy, test in the dummy account)
 The dataflow is made of several stages. The main data to work with is that in the <span style="color:green"> green box</span>, which includes information on times and charges stored in a list of events. However, it is important to get some monitoring variables. Those are obtained from the `ana.m` flow: a robust, double checked, standard software to obtain the monitoring information for every miniTRASGO. This is the reason why we should not expand the `ana.m`, but to constrain it and make it more reliable and stable.
 
 ![dataflow](https://github.com/cayesoneira/miniTRASGO-documentation/assets/93153458/55e06b82-e38a-4bbf-a4fb-b103b728e888)
