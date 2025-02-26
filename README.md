@@ -1,5 +1,5 @@
 # miniTRASGO documentation
-Reposotory used to host the documentation and usage guide for the miniTRASGO Cosmic Ray telescope. This page is deployed through `mkdocs`, a python-based resource to build html pages from a simple tree of markdown files.
+Repository used to host the documentation and usage guide for the miniTRASGO Cosmic Ray telescope. This page is deployed through `mkdocs`, a python-based resource to build html pages from a simple tree of markdown files.
 
 ## To edit the documentation:
 The hierarchy of entries is simple: a new topic has to be added as a markdown file inside the /docs file. It can be edited and created online. To relate it to the final page the `.yml` has to be accessed and, in the 'nav' section, just added with its path in the repository.
