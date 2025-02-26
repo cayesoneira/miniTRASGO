@@ -4,7 +4,7 @@ Reposotory used to host the documentation and usage guide for the miniTRASGO Cos
 ## To edit the documentation:
 The hierarchy of entries is simple: a new topic has to be added as a markdown file inside the /docs file. It can be edited and created online. To relate it to the final page the `.yml` has to be accessed and, in the 'nav' section, just added with its path in the repository.
 
-Just send an email to us to get access to the repository edition, even though you could create a branch of the reository and wait until our aproval.
+Just send an email to us to get access to the repository edition, even though you could create a branch of the repository and wait until our aproval.
 
 ## Two ways of compiling and deploying the page that has been edited online
 We are currently using the one where we need a url. Currently we have automatically programmed it to execute every hour.
