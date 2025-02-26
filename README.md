@@ -39,9 +39,6 @@ miniTRASGO/
 │   │   ├── notes.md
 │   ├── help/
 │   │   ├── index.md
-│
-├── assets/
-│   ├── trasgo_logo.png  # Project logo
 ```
 
 ## How to Edit the Documentation
