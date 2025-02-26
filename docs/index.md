@@ -1,4 +1,4 @@
-# Welcome to the miniTRASGO documentation
+# Welcome to the miniTRASGO documentation (test)
 Here everything necessary to use the miniTRASGO (miniature TRASGO: TRAck reconStructinG bOx), aka minGO, and its data is found.
 
 ## Logbook
