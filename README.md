@@ -1,5 +1,7 @@
 # miniTRASGO Documentation
 
+**This documentation is designed to be edited easily by anyone. No coding skills or prior technical knowledge are required!**
+
 This repository hosts the documentation and usage guide for the miniTRASGO Cosmic Ray telescope. The documentation is deployed using `mkdocs`, a Python-based tool that generates HTML pages from a structured set of markdown files.
 
 ## Structure of the Documentation
@@ -59,41 +61,23 @@ Anyone with a GitHub account can propose changes to the documentation by followi
 - Edit `mkdocs.yml` and add an entry in the `nav` section with the correct path.
 - Follow steps 3-5 above to submit your changes.
 
-### Editing Locally and Deploying
+---
 
-If you prefer working locally, follow these steps:
+## Deployment Process: You Don't Have to Worry About It!
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/cayesoneira/miniTRASGO.git
-   cd miniTRASGO/
-   ```
-2. Install dependencies:
-   ```bash
-   pip install mkdocs mkdocs-material
-   ```
-3. Edit or create markdown files in the `docs/` folder.
-4. Preview the site locally:
-   ```bash
-   mkdocs serve
-   ```
-   This will start a local server at `http://127.0.0.1:8000/` where you can preview changes.
-5. Deploy using GitHub Pages:
+The deployment of the documentation is **handled exclusively by the repository owners**. If you contribute by editing files or submitting pull requests, you **do not need to worry about the deployment process**.
 
-   &#x20;
-   ```bash
-   mkdocs gh-deploy
-   ```
-   This will update the online documentation (if using GitHub Pages as a deployment method).
+Once your edits are approved and merged into the repository, the documentation will be updated automatically by the maintainers. You can focus **only on contributing edits** and leave the deployment process to us!
 
-## Deploying to a Custom URL (Preferred Method)
+---
+
+## Deployment Details (For Reference Only)
 
 The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.fis.ucm.es/minitrasgo) and is updated automatically every hour. However, manual updates can be performed with the following steps:
 
 ### Connecting to the Deployment Server
 
-1. **Configure SSH:**
-   Add the following lines to your `~/.ssh/config` file:
+1. **Configure SSH:** Add the following lines to your `~/.ssh/config` file:
 
    ```bash
    Host nuclab2
@@ -108,7 +92,7 @@ The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.f
        User petgfn
    ```
 
-2. **Connect to ****`nuc1`**** through ****`nuclab2`**** as a tunnel:**
+2. **Connect to **``** through **``** as a tunnel:**
 
    ```bash
    ssh -J nuclab2 nuc1
@@ -120,16 +104,16 @@ The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.f
    sudo /home/www/html/update-minitrasgo.sh
    ```
 
+---
+
 ## Troubleshooting
 
 If you encounter issues with the documentation, check the following:
 
 - Ensure that markdown syntax is correctly formatted.
 - Verify that new files are referenced in `mkdocs.yml`.
-- Use `mkdocs serve` to test locally before deploying.
-- If the online site does not update, manually execute the update script as described above.
+- Use `mkdocs serve` to test locally before submitting a pull request.
 
 ## Contact
 
 For any questions, suggestions, or contributions, feel free to contact us or create an issue in the [GitHub repository](https://github.com/cayesoneira/miniTRASGO/issues).
-
