@@ -1,12 +1,61 @@
-# miniTRASGO Documentation ()
+# miniTRASGO Documentation
 
-**This documentation is designed to be edited easily by anyone. No coding skills or prior technical knowledge are required!**
+**Welcome to the miniTRASGO Cosmic Ray Telescope documentation!**  
+This repository hosts the documentation and usage guide for the miniTRASGO project. The documentation is built using **mkdocs**, a simple and user-friendly tool that generates a webpage from markdown files. **No coding skills or technical knowledge are required to contribute!**
 
-This repository hosts the documentation and usage guide for the miniTRASGO Cosmic Ray telescope. The documentation is deployed using `mkdocs`, a Python-based tool that generates HTML pages from a structured set of markdown files.
+---
+
+## How to Edit the Documentation
+
+Anyone with a GitHub account can contribute to the documentation by editing markdown files directly on GitHub. Here's how:
+
+### Step 1: Fork the Repository (First-Time Contributors)
+
+1. Go to the [miniTRASGO GitHub repository](https://github.com/cayesoneira/miniTRASGO).
+2. Click the **Fork** button in the top-right corner. This creates a copy of the repository under your GitHub account.
+
+### Step 2: Edit Files Online (Preferred Method)
+
+1. In your forked repository, navigate to the `docs/` folder.
+2. Find the markdown file you want to edit (e.g., `docs/home/motivation.md`).
+3. Click the file to open it, then click the **pencil icon** (✏️) in the top-right corner to start editing.
+4. Make your changes using **Markdown syntax** (simple text formatting).  
+   - Need help with Markdown? Check out this [Markdown Guide](https://www.markdownguide.org/).
+
+### Step 3: Propose Changes
+
+1. After editing, scroll down to the "Commit changes" section.
+2. Add a short description of your changes (e.g., "Fixed typo in motivation section").
+3. Select **Create a new branch for this commit and start a pull request**.
+4. Click **Propose changes**.
+
+### Step 4: Create a Pull Request
+
+1. Review your changes on the pull request page.
+2. Add a title and description explaining your changes.
+3. Click **Create pull request**.  
+   - Your changes will be reviewed by the repository owners and merged if approved.
+
+---
+
+### Adding a New Page
+
+To add a new page:
+1. In your forked repository, click **Add file** in the `docs/` folder and create a new `.md` file (e.g., `docs/help/new-topic.md`).
+2. Edit the `mkdocs.yml` file and add the new file under the appropriate section in the `nav` section. For example:
+   ```yaml
+   nav:
+       - Troubleshooting:
+           - help/index.md
+           - help/new-topic.md
+   ```
+3. Follow the steps above to propose changes and create a pull request.
+
+---
 
 ## Structure of the Documentation
 
-The documentation follows a hierarchical structure as defined in the `mkdocs.yml` file. Below is an overview of the file structure:
+The documentation is organized into folders and markdown files. Below is the hierarchy:
 
 ```
 miniTRASGO/
@@ -43,42 +92,17 @@ miniTRASGO/
 │   │   ├── index.md
 ```
 
-## How to Edit the Documentation
-
-### Editing Directly on GitHub (Preferred Method)
-
-Anyone with a GitHub account can propose changes to the documentation by following these steps:
-
-1. **Navigate to the repository:** Go to [GitHub repository](https://github.com/cayesoneira/miniTRASGO).
-2. **Locate the file:** In the `docs/` folder, find the markdown file you want to edit or add a new one.
-3. **Edit the file:** Click the pencil icon on the top right to make modifications.
-4. **Propose changes:** After editing, describe your changes and click **Propose Changes**.
-5. **Create a Pull Request:** Click **Create Pull Request** so the changes can be reviewed and merged.
-
-**To add a new page:**
-
-- Create a new markdown file inside the `docs/` folder.
-- Edit `mkdocs.yml` and add an entry in the `nav` section with the correct path.
-- Follow steps 3-5 above to submit your changes.
-
 ---
 
-## Deployment Process: You Don't Have to Worry About It!
+## Deployment Process: For Repository Owners Only
 
-The deployment of the documentation is **handled exclusively by the repository owners**. If you contribute by editing files or submitting pull requests, you **do not need to worry about the deployment process**.
+The deployment of the documentation is **handled exclusively by the repository owners**. Contributors do not need to worry about this step. The documentation is automatically updated every hour and hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.fis.ucm.es/minitrasgo).
 
-Once your edits are approved and merged into the repository, the documentation will be updated automatically by the maintainers. You can focus **only on contributing edits** and leave the deployment process to us!
-
----
-
-## Deployment Details (For Reference Only)
-
-The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.fis.ucm.es/minitrasgo) and is updated automatically every hour. However, manual updates can be performed with the following steps:
+For reference, here are the deployment details:
 
 ### Connecting to the Deployment Server
 
 1. **Configure SSH:** Add the following lines to your `~/.ssh/config` file:
-
    ```bash
    Host nuclab2
        HostName nuclab2.fis.ucm.es
@@ -86,20 +110,17 @@ The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.f
        PubkeyAcceptedAlgorithms +ssh-rsa
        HostkeyAlgorithms +ssh-rsa
        KexAlgorithms +diffie-hellman-group1-sha1
-
    Host nuc1
        Hostname nuc1.fis.ucm.es
        User petgfn
    ```
 
-2. **Connect to **``** through **``** as a tunnel:**
-
+2. **Connect to `nuc1` through `nuclab2` as a tunnel:**
    ```bash
    ssh -J nuclab2 nuc1
    ```
 
 3. **Deploy the updated site:**
-
    ```bash
    sudo /home/www/html/update-minitrasgo.sh
    ```
@@ -108,12 +129,19 @@ The documentation is hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.f
 
 ## Troubleshooting
 
-If you encounter issues with the documentation, check the following:
-
-- Ensure that markdown syntax is correctly formatted.
+If you encounter issues while editing:
+- Ensure the markdown syntax is correct.
 - Verify that new files are referenced in `mkdocs.yml`.
-- Use `mkdocs serve` to test locally before submitting a pull request.
+- If the online site does not update, contact the repository owners.
+
+---
 
 ## Contact
 
-For any questions, suggestions, or contributions, feel free to contact us or create an issue in the [GitHub repository](https://github.com/cayesoneira/miniTRASGO/issues).
+For questions, suggestions, or contributions, feel free to:
+- Create an issue in the [GitHub repository](https://github.com/cayesoneira/miniTRASGO/issues).
+- Contact the repository owners directly.
+
+---
+
+This README is designed to make it easy for anyone to contribute to the miniTRASGO documentation without needing technical expertise. Happy editing! 🚀
