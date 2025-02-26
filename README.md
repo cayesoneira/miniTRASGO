@@ -1,7 +1,7 @@
 # miniTRASGO Documentation
 
 **Welcome to the miniTRASGO Cosmic Ray Telescope documentation!**  
-This repository hosts the documentation and usage guide for the miniTRASGO project. The documentation is built using **mkdocs**, a simple and user-friendly tool that generates a webpage from markdown files. **No coding skills or technical knowledge are required to contribute!**
+This repository hosts the documentation and usage guide for the miniTRASGO project. The documentation is built using **mkdocs**, a simple and user-friendly tool that generates a webpage from markdown files. **No specific coding knowledge is required to contribute!**
 
 ---
 
