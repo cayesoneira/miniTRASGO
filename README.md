@@ -96,34 +96,7 @@ miniTRASGO/
 
 ## Deployment Process: For Repository Owners Only
 
-The deployment of the documentation is **handled exclusively by the repository owners**. Contributors do not need to worry about this step. The documentation is automatically updated every hour and hosted at [http://nuc1.fis.ucm.es/minitrasgo](http://nuc1.fis.ucm.es/minitrasgo).
-
-For reference, here are the deployment details:
-
-### Connecting to the Deployment Server
-
-1. **Configure SSH:** Add the following lines to your `~/.ssh/config` file:
-   ```bash
-   Host nuclab2
-       HostName nuclab2.fis.ucm.es
-       User petgfn
-       PubkeyAcceptedAlgorithms +ssh-rsa
-       HostkeyAlgorithms +ssh-rsa
-       KexAlgorithms +diffie-hellman-group1-sha1
-   Host nuc1
-       Hostname nuc1.fis.ucm.es
-       User petgfn
-   ```
-
-2. **Connect to `nuc1` through `nuclab2` as a tunnel:**
-   ```bash
-   ssh -J nuclab2 nuc1
-   ```
-
-3. **Deploy the updated site:**
-   ```bash
-   sudo /home/www/html/update-minitrasgo.sh
-   ```
+The deployment of the documentation is **automatic using GitHub Actions**. Contributors do not need to worry about this step. The documentation is automatically updated with every hour push and hosted at [https://csoneira.github.io/miniTRASGO-documentation/](https://csoneira.github.io/miniTRASGO-documentation/).
 
 ---
 
@@ -131,7 +104,7 @@ For reference, here are the deployment details:
 
 If you encounter issues while editing:
 - Ensure the markdown syntax is correct.
-- Verify that new files are referenced in `mkdocs.yml`.
+- Verify that new files are referenced in the scheme in `mkdocs.yml`.
 - If the online site does not update, contact the repository owners.
 
 ---
@@ -139,9 +112,5 @@ If you encounter issues while editing:
 ## Contact
 
 For questions, suggestions, or contributions, feel free to:
-- Create an issue in the [GitHub repository](https://github.com/cayesoneira/miniTRASGO/issues).
+- Create an issue in the [GitHub repository](https://github.com/csoneira/miniTRASGO/issues).
 - Contact the repository owners directly.
-
----
-
-This README is designed to make it easy for anyone to contribute to the miniTRASGO documentation without needing technical expertise. Happy editing! 🚀
