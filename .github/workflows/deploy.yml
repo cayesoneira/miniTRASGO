@@ -3,10 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - main  # Change if your main branch has a different name
-
-permissions:
-  contents: write  # <-- This gives GitHub Actions permission to push to gh-pages
+      - main  # Change this if you're using a different branch
 
 jobs:
   deploy:
@@ -15,8 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false  # Avoid using GitHub Actions bot credentials
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,9 +22,4 @@ jobs:
         run: pip install mkdocs mkdocs-material
 
       - name: Deploy MkDocs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-branch gh-pages
+        run: mkdocs gh-deploy --force
