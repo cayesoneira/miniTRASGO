@@ -1,6 +1,7 @@
-site_name: miniTRASGO
-#site_url: https://cayesoneira.github.io/miniTRASGO/
-site_url: http://nuc1.fis.ucm.es/minitrasgo
+site_name: miniTRASGO documentation
+site_url: https://csoneira.github.io/miniTRASGO-documentation/  # Your GitHub Pages URL
+repo_name: csoneira/miniTRASGO-documentation
+repo_url: https://github.com/csoneira/miniTRASGO-documentation
 nav:
     - Home:
         - index.md
