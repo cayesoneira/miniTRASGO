@@ -112,5 +112,5 @@ If you encounter issues while editing:
 ## Contact
 
 For questions, suggestions, or contributions, feel free to:
-- Create an issue in the [GitHub repository](https://github.com/csoneira/miniTRASGO/issues).
+- Create an issue in the [GitHub repository](https://github.com/csoneira/miniTRASGO-documentation/issues).
 - Contact the repository owners directly.
