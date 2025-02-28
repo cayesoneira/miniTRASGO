@@ -2,6 +2,7 @@ site_name: miniTRASGO documentation
 site_url: https://csoneira.github.io/miniTRASGO-documentation/  # Your GitHub Pages URL
 repo_name: csoneira/miniTRASGO-documentation
 repo_url: https://github.com/csoneira/miniTRASGO-documentation
+
 nav:
     - Home:
         - index.md
@@ -40,20 +41,15 @@ theme:
     - navigation.top
     - navigation.indexes
   logo: assets/trasgo_logo.png
-  palette: 
-
-    # Palette toggle for light mode
+  palette:
     - scheme: default
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
 
 plugins:
   - search
