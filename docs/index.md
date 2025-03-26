@@ -2,7 +2,7 @@
 Here everything necessary to use the miniTRASGO (miniature TRASGO: TRAck reconStructinG bOx), aka minGO, and its data is found.
 
 ## Logbook
-We encourage the miniTRASGO user to keep track of any activity they develop for any of the miniTRASGOs in the following logbook made in Google Sheets: [miniTRASGO logbook]([https://docs.google.com/spreadsheets/d/12n6DfQ32oXcRKpHaolfAoO3pKVVrrWzk7TBOIZ0N6ro/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1ato36QkIXCxFkDT_LtAaLjPP7pvLcor-xZAP4fy00l0/edit?gid=816573551#gid=816573551))
+We encourage the miniTRASGO user to keep track of any activity they develop for any of the miniTRASGOs in the following logbook made in Google Sheets: [miniTRASGO logbook](https://docs.google.com/spreadsheets/d/1ato36QkIXCxFkDT_LtAaLjPP7pvLcor-xZAP4fy00l0/edit?gid=816573551#gid=816573551)
 
 ## Notebook
 Find in this link the a notebook with a more precise registration of thoughts and calculations: [miniTRASGO notebook](https://docs.google.com/document/d/e/2PACX-1vQD_Zr4IW3ZZl0sX4jf7jcD_9tdXbD-kIDpydO0k9HWhewk7yDDWJEF4PC4ARUu1nk-mdEexsyPXXY-/pub)
